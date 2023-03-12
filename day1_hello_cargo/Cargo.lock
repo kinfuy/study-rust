@@ -5,3 +5,10 @@ version = 3
 [[package]]
 name = "day1_hello_cargo"
 version = "0.1.0"
+dependencies = [
+ "gacm",
+]
+
+[[package]]
+name = "gacm"
+version = "0.1.0"
