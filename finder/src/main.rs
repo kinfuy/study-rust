@@ -1,13 +1,19 @@
+use std::env;
 use std::process;
-fn get_open_path() -> String {
-    let mut arg = String::new();
-    std::io::stdin().read_line(&mut arg).unwrap();
-    return arg;
-}
+
+use finder::search;
+use finder::Config;
+
 fn main() {
-    println!("输入打开的项目?");
-    let arg = get_open_path();
-    println!("Searching for {}", arg);
-    let output = process::Command::new("ls").spawn().expect("执行错误");
-    println!("{:?}", output)
+    let args: Vec<String> = env::args().collect();
+    let config = Config::build(args).unwrap_or_else(|err| {
+        println!("{}", err);
+        process::exit(1)
+    });
+    let rst = search(&config).unwrap_or_else(|err| {
+        println!("{}", err);
+        process::exit(1)
+    });
+
+    println!("{:#?}", rst);
 }
