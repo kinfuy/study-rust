@@ -1,0 +1,1 @@
+/Users/yangyangyang/Documents/code/study-rust/npm-init/target/debug/npm-init: /Users/yangyangyang/Documents/code/study-rust/npm-init/src/lib.rs /Users/yangyangyang/Documents/code/study-rust/npm-init/src/main.rs

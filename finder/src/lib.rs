@@ -20,6 +20,7 @@ impl Config {
     }
 }
 
+/// 搜索关键词
 pub fn search(config: &Config) -> Result<Vec<String>, Box<dyn Error>> {
     let mut rst: Vec<String> = Vec::new();
     let content = fs::read_to_string(&config.path)?;

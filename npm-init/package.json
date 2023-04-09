@@ -1,0 +1,14 @@
+{
+    "name": "test-init",
+    "version": "1.0.0)",
+    "description": "",
+    "entry": "index.js",
+    "script": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "git_repo": "https://github.com/kinfuy/npm-init.git",
+    "keyword": "",
+    "author": "",
+    "license": "ISC",
+    "is_create": "yes"
+}
