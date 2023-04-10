@@ -4,7 +4,7 @@ use npm_init::{console, tips};
 fn main() {
     console::log(tips::DEFAULT_TIP);
     let name = tips::get_input("package name:", "npm-init");
-    let version = tips::get_input("version:", "1.0.0)");
+    let version = tips::get_input("version:", "1.0.0");
     let description = tips::get_input("description", "");
     let entry = tips::get_input("entry point: ", "index.js");
     let test_command = tips::get_input(
