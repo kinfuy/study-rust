@@ -1,0 +1,19 @@
+[workspace]
+
+members = [
+  "day1_hello_cargo",
+  "day2",
+  "day3",
+  "day4",
+  "day5",
+  "day6",
+  "day7",
+  "day9",
+  "day10",
+  "day11",
+  "day12",
+  "finder",
+  "npm-init",
+  "parvite-notice/src-tauri",
+  "tauri-study/src-tauri"
+]
